@@ -2,61 +2,85 @@
   {
     "id": 1,
     "name": "Rocky",
-    "image": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12193133/German-Shepherd-Puppy-Fetch.jpg"
+    "image": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12193133/German-Shepherd-Puppy-Fetch.jpg",
+    "toy": "Squeaky bear",
+    "treat": "Bacon"
   },
   {
     "id": 2,
     "name": "Bear",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfhRAAD26TyhV_2MwUAFEqosyWnVE2JwRRN-VO0H5FdeoDTJrAg"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfhRAAD26TyhV_2MwUAFEqosyWnVE2JwRRN-VO0H5FdeoDTJrAg",
+    "toy": "Red Ball",
+    "treat": "Peanut Butter"
   },
   {
     "id": 3,
     "name": "Charlie",
-    "image": "https://www.petmd.com/sites/default/files/petmd-shaking-puppy.jpg"
+    "image": "https://www.petmd.com/sites/default/files/petmd-shaking-puppy.jpg",
+    "toy": "Cuddly Monkey",
+    "treat": "Apples"
   },
   {
     "id": 4,
     "name": "Bella",
-    "image": "http://trupanion.com/blog/wp-content/uploads/2017/09/GettyImages-512536165.jpg"
+    "image": "http://trupanion.com/blog/wp-content/uploads/2017/09/GettyImages-512536165.jpg",
+    "toy": "Rope Toy",
+    "treat": "Blueberries"
   },
   {
     "id": 5,
     "name": "Molly",
-    "image": "https://www.petlandfairfield.com/wp-content/themes/cosmick-petland-global/images/cta1-1.jpg"
+    "image": "https://www.petlandfairfield.com/wp-content/themes/cosmick-petland-global/images/cta1-1.jpg",
+    "toy": "Birthday Cake Toy",
+    "treat": "Bacon"
   },
   {
     "id": 6,
     "name": "Daisy",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkj9zJoJCHWEd4NWB8499tFbbjqEhMh9w3YekmEkarlQ-liTdY"
+    "image": "https://2bs1rv1d3u185ixhu13k1l0g-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/bobert.jpg",
+    "toy": "Soft Bunny",
+    "treat": "Peanut Butter"
   },
   {
     "id": 7,
     "name": "Max",
-    "image": "https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg"
+    "image": "https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg",
+    "toy": "Tennis Ball",
+    "treat": "Sweet Potato"
   },
   {
     "id": 8,
     "name": "Rover",
-    "image": "https://www.thesprucepets.com/thmb/tlEk6A84_m3uSQZbnvSASwksH3E=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/shar-pei-pitbull-puppy-laying-on-couch-840226604-5c61d20746e0fb0001dcd5ee.jpg"
+    "image": "https://www.thesprucepets.com/thmb/tlEk6A84_m3uSQZbnvSASwksH3E=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/shar-pei-pitbull-puppy-laying-on-couch-840226604-5c61d20746e0fb0001dcd5ee.jpg",
+    "toy": "Rope Toy",
+    "treat": "Pork Bites"
   },
   {
     "id": 9,
     "name": "Luna",
-    "image": "https://tvar.org/wp-content/uploads/2018/04/iStock-486330501-copy.jpg"
+    "image": "https://tvar.org/wp-content/uploads/2018/04/iStock-486330501-copy.jpg",
+    "toy": "Green Ball",
+    "treat": "Cheese"
   },
   {
     "id": 10,
     "name": "Coco",
-    "image": "https://static.scientificamerican.com/sciam/cache/file/D059BC4A-CCF3-4495-849ABBAFAED10456_source.jpg?w=590&h=800&526ED1E1-34FF-4472-B348B8B4769AB2A1"
+    "image": "https://static.scientificamerican.com/sciam/cache/file/D059BC4A-CCF3-4495-849ABBAFAED10456_source.jpg?w=590&h=800&526ED1E1-34FF-4472-B348B8B4769AB2A1",
+    "toy": "Cuddly Monkey",
+    "treat": "Ice Cream"
   },
   {
     "id": 11,
     "name": "Toby",
-    "image": "https://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg"
+    "image": "https://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg",
+    "toy": "Stuffed Bear",
+    "treat": "Jerky"
   },
   {
     "id": 12,
     "name": "Chopper",
-    "image": "http://vhnrotts.com/wp-content/uploads/2013/06/PuppyPage01.jpg"
+    "image": "http://vhnrotts.com/wp-content/uploads/2013/06/PuppyPage01.jpg",
+    "toy": "Kong Toy",
+    "treat": "Lamb Bites"
   }
 ]

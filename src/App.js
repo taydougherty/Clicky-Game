@@ -7,9 +7,10 @@ import puppies from "./puppies.json";
 class App extends Component {
   // Setting this.state.puppies to the puppies json array
   state = {
-    puppies: sortfunction,
+    // sort function for puppies state
+    puppies,
     counter: 0,
-    ifClicked =[]
+    ifClicked: []
   };
 
   // rename to when clicked image
@@ -30,14 +31,14 @@ class App extends Component {
     // Filter this.state.puppies for puppies with an id not equal to the id being removed
     const puppies = this.state.puppies.filter(friend => friend.id !== id);
     // Set this.state.puppies equal to the new puppies array
-    this.setState({ puppies: sortfunction(google it) });
+    // this.setState({ puppies: sortfunction(google it) });
   };
 
   // Map over this.state.puppies and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
-        <Title>puppies List</Title>
+        <Title>Puppy Match!</Title>
         {this.state.puppies.map(Puppy => (
           <PuppyCard
             removePuppy={this.removePuppy}
@@ -45,6 +46,8 @@ class App extends Component {
             key={Puppy.id}
             name={Puppy.name}
             image={Puppy.image}
+            toy={Puppy.toy}
+            treat={Puppy.treat}
           />
         ))}
       </Wrapper>

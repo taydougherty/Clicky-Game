@@ -13,16 +13,14 @@ function PuppyCard(props) {
             <strong>Name:</strong> {props.name}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Favourite Toy:</strong> {props.toy}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Favourite Treat:</strong> {props.treat}
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removePuppy(props.id)} className="remove">
-        𝘅
-      </span>
+      <span onClick={() => props.removePuppy(props.id)} className="remove"></span>
     </div>
   );
 }
