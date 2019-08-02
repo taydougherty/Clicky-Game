@@ -1,56 +1,70 @@
 import React, { Component } from "react";
 import PuppyCard from "./components/PuppyCard";
+import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import puppies from "./puppies.json";
 
 class App extends Component {
-  // Setting this.state.puppies to the puppies json array
   state = {
-    // sort function for puppies state
-    puppies,
+    puppies: puppies.sort(() => 0.5 - Math.random()),
     counter: 0,
+    topScore: 0,
     ifClicked: []
   };
 
-  // rename to when clicked image
-  removePuppy = id => {
-    // conditionals:
-    // if already in the ifClicked array:
-    // set state of counter to 0
-    // alert "already been clicked"
-    // empty ifClicked array
-    // else:
-    // add count +1 to counter
-    // reshuffle using sort function
-    // when hit 12:
-    // counter = 0
-    // alert "you win"
-    // reshuffle using sort function
+  // shuffledArr = puppies => {
+  //   const newArr = puppies.slice()
+  //   for (let i = newArr.length - 1; i > 0; i--) {
+  //     const random = Math.floor(Math.random() * (i + 1));
+  //     [newArr[i], newArr[random]] = [newArr[random], newArr[i]];
+  //   }
+  //   return newArr
+  // };
 
-    // Filter this.state.puppies for puppies with an id not equal to the id being removed
-    const puppies = this.state.puppies.filter(friend => friend.id !== id);
-    // Set this.state.puppies equal to the new puppies array
-    // this.setState({ puppies: sortfunction(google it) });
+  clickedPuppy = id => {
+
+    if (this.state.ifClicked.includes(id)) {
+      this.setState({ counter: 0 });
+      this.setState({ ifClicked: [] });
+      alert(`You've already selected this puppy! Game over.`);
+    } else {
+      this.setState({ counter: this.state.counter + 1 });
+      this.state.ifClicked.push(id);
+      // this.shuffledArr();
+    }
+
+    if (this.state.counter >= this.state.topScore) {
+      this.setState({ topScore: this.state.counter });
+    }
+
+    if (this.state.counter === 12) {
+      this.setState({ counter: 0 });
+      // this.setState({ ifClicked: [] });
+      // this.shuffledArr();
+      alert("You win!");
+    }
+
+    this.setState({ puppies: this.state.puppies.sort(() => 0.5 - Math.random()) });
   };
 
-  // Map over this.state.puppies and render a FriendCard component for each friend object
   render() {
     return (
-      <Wrapper>
-        <Title>Puppy Match!</Title>
-        {this.state.puppies.map(Puppy => (
-          <PuppyCard
-            removePuppy={this.removePuppy}
-            id={Puppy.id}
-            key={Puppy.id}
-            name={Puppy.name}
-            image={Puppy.image}
-            toy={Puppy.toy}
-            treat={Puppy.treat}
-          />
-        ))}
-      </Wrapper>
+      <div>
+        <Header counter={this.state.counter} topScore={this.state.topScore} />
+        <Wrapper>
+          {this.state.puppies.map(Puppy => (
+            <PuppyCard
+              clickedPuppy={this.clickedPuppy}
+              id={Puppy.id}
+              key={Puppy.id}
+              name={Puppy.name}
+              image={Puppy.image}
+              toy={Puppy.toy}
+              treat={Puppy.treat}
+            />
+          ))}
+        </Wrapper>
+      </div>
     );
   }
 }
