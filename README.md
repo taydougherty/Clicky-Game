@@ -1,8 +1,8 @@
 # Puppy Match
 
-* Puppy Match is a classic matching game to test your memory! Click on the pictures of adorable puppies but remember your choice because if you click the same puppy twice you lose!
+Puppy Match is a classic matching game to test your memory! 
 
-* Try to beat your high score by playing again and again.
+Click on the pictures of adorable puppies but remember your choice because if you click the same puppy twice you lose! Try to beat your high score by playing again and again.
 
 ## Link to Live App
 
