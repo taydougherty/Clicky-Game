@@ -6,7 +6,7 @@ Click on the pictures of adorable puppies but remember your choice because if yo
 
 ## Link to Live App
 
-* [Puppy Match]()
+* [Puppy Match](https://taydougherty.github.io/Clicky-Game/)
 
 ### Technologies Used
 
