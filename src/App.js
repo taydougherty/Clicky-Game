@@ -12,15 +12,6 @@ class App extends Component {
     ifClicked: []
   };
 
-  // shuffledArr = puppies => {
-  //   const newArr = puppies.slice()
-  //   for (let i = newArr.length - 1; i > 0; i--) {
-  //     const random = Math.floor(Math.random() * (i + 1));
-  //     [newArr[i], newArr[random]] = [newArr[random], newArr[i]];
-  //   }
-  //   return newArr
-  // };
-
   clickedPuppy = id => {
 
     if (this.state.ifClicked.includes(id)) {
@@ -30,7 +21,6 @@ class App extends Component {
     } else {
       this.setState({ counter: this.state.counter + 1 });
       this.state.ifClicked.push(id);
-      // this.shuffledArr();
     }
 
     if (this.state.counter >= this.state.topScore) {
@@ -39,8 +29,7 @@ class App extends Component {
 
     if (this.state.counter === 12) {
       this.setState({ counter: 0 });
-      // this.setState({ ifClicked: [] });
-      // this.shuffledArr();
+      this.setState({ ifClicked: [] });
       alert("You win!");
     }
 
