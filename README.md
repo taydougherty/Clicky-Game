@@ -1,4 +1,4 @@
-# Puppy Match
+# :dog: Puppy Match
 
 Puppy Match is a classic matching game to test your memory! 
 
